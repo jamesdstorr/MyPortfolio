@@ -11,16 +11,17 @@ const Hero = () => {
   
       <div className={style.hero} id="hero">
         <div className={style.profile}>
+         
+          <div className="text-center pb-5">
+            <h1 className="text-2xl">{intro}</h1>
+            <h2 className="text-1xl">a Software Engineering Manager</h2>
+          </div>
           <Image
             src={profilePic}
             alt="profile image"
             className={style.profilePic}
             priority
           />
-          <div className="text-center pb-1">
-            <h1 className="text-2xl">{intro}</h1>
-            <h2 className="text-1xl">a Software Engineering Manager</h2>
-          </div>
         </div>
         <div className={style.mainContent}>
           <Content/> 

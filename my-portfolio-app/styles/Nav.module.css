@@ -4,12 +4,21 @@
   left: 0;
   z-index: 999;  
   color: white;
+  background-color: rgba(0,0,0,0.8);
   padding: 15px;
-  margin-left: 25px;
+  min-height: 100vh;
+
+  
+}
+
+.nav {
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
 }
 .nav li {
-    margin-top: 50px;
     padding:20px;
     background-color: rgba(209,209,194,0.5); 
     text-align: center;
