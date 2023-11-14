@@ -1,22 +1,39 @@
-import React from 'react';
-import Link from 'next/link';
-import style from '../../styles/Nav.module.css'
+"use client";
+import React, { useContext, useEffect } from "react";
+import style from "../../styles/Nav.module.css";
+import { DisplayContext } from "../utility/displayContext";
 
 const Nav = () => {
-    return (
-        <div className={style.sidebar}>
-              <ul className={style.nav}>
-                <li><Link className={style.navLink} href="/">Home</Link></li>
-                <li><Link className={style.navLink} href="/">About Me</Link></li>
-                <li><Link className={style.navLink} href="/">Experience</Link></li>
-                <li><Link className={style.navLink} href="/">Projects</Link></li>
-                <li><Link className={style.navLink} href="/blog">Blog</Link></li>
-            </ul> 
+   const displayContext = useContext(DisplayContext);
 
-        </div>
-   
-      
-    );
+  if (!displayContext) {
+    console.error("DisplayContext not found");
+    return null;
+  }
+
+  const { setDisplay } = displayContext; 
+
+  
+
+  const handleNavClick = (e: string) => {
+    console.log("Clicked:", e);
+    setDisplay(e);
+  };
+
+  return (
+    <div className={style.sidebar}>
+      <ul className={style.nav}>
+        <li>
+          <button onClick={() => handleNavClick("aboutMe")}>About Me</button>
+        </li>
+        <li>
+          <button onClick={() => handleNavClick("experience")}>
+            Experience
+          </button>
+        </li>
+      </ul>
+    </div>
+  );
 };
 
 export default Nav;
