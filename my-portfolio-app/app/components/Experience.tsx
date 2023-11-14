@@ -24,6 +24,24 @@ const Experience = () => {
                         <p>{sapmpleText}</p>
                     </div>
                 </li>
+                <li>
+                    <div>
+                        <h2>Software Engineer Manager</h2>
+                        <p>{sapmpleText}</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h2>Azure Architect</h2>
+                        <p>{sapmpleText}</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h2>Cloud Solution Designer</h2>
+                        <p>{sapmpleText}</p>
+                    </div>
+                </li>
             </ul>
         </>
     );
