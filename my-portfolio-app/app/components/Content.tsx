@@ -7,16 +7,17 @@ import Experience from './Experience';
 const Content = () => {
     const context = useContext(DisplayContext);
 
+
     if (!context) {
         throw new Error('Content must be used within a DisplayProvider');
       }
 
-    const {display} = context;
+    const {display, workExperiences} = context;
 
     return (
         <>
          {display === 'aboutMe' && <AboutMe />}
-         {display === 'experience' && <Experience />}
+         {display === 'experience' && <Experience workexperiences={workExperiences} />}
             
         </>
     );

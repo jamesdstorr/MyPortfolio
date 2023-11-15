@@ -1,0 +1,48 @@
+
+   [ {
+        "title": "Software Engineering Manager, BT",
+        "from": "October 2023",
+        "to": "Present",
+        "summary": "Leading a team of software engineers compromising of three squads delivering React, Java API and Flutter to deliver a Basket and Checkout platform for EE's new Marketplace platform.",
+        "highlights": [
+            "Leading a team of over 30 Software Engineers from across the globe",
+            "Working with React, Flutter and Java Spring Boot",
+            "Developing Roadmaps and coordintating with Product Owners",
+            "Building Frameworks for delivering high quality",
+            "Using Agile Methedologies and DORA metrics",
+            "Conducting Code Reviews and Quality Assurance",
+            "Improving Code Coverage, and Test-Driven Development",
+            "Nurturing a Performance-based Engineering Culture"
+
+        ]
+
+    },
+    {
+        "title": "Azure Cloud Consultant, BT",
+        "from": "October 2022",
+        "to": "October 2023",
+        "summary": "Developing Azure Cloud IT Solutions for various BT customers, with a particular focus on Power Platform and Microsoft Teams.",
+        "highlights": [
+            "Designing and Devloping Microsoft Teams Solutions and Policies",
+            "Designing modern workplace experiences",
+            "Mentoring Graduates and Apprentices in Microsoft technologies",
+            "Building Power Platform Solutions",
+            "Business Case curation and Project management"
+        ]
+
+    },
+    {
+        "title": "Azure Cloud Consultant",
+        "from": "October 2022",
+        "to": "October 2023",
+        "summary": "Developing Azure Cloud IT Solutions for various BT customers, with a particular focus on Power Platform and Microsoft Teams.",
+        "highlights": [
+            "Designing and Devloping Microsoft Teams Solutions and Policies",
+            "Designing modern workplace experiences",
+            "Mentoring Graduates and Apprentices in Microsoft technologies",
+            "Building Power Platform Solutions",
+            "Business Case curation and Project management"
+        ]
+
+    }
+]

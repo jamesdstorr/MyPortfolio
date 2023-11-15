@@ -1,9 +1,12 @@
 "use client";
 import React, { createContext, useState, useMemo, ReactNode } from "react";
+import workExperienceData from '../data/workExperience.json'
+import { WorkExperience } from "../types/experience";
 
 interface DisplayContextType {
   display: string;
   setDisplay: (newDisplay: string) => void;
+  workExperiences: WorkExperience[];
 }
 
 const DisplayContext = createContext<DisplayContextType | undefined>(undefined);
@@ -24,6 +27,7 @@ const DisplayProvider: React.FC<DisplayProviderProps> = ({ children }) => {
     return {
       display,
       setDisplay: updateDisplay,
+      workExperiences: workExperienceData
     };
   }, [display]);
 

@@ -1,50 +1,36 @@
-import React from 'react';
+import React from "react";
+import { WorkExperienceProps } from "../types/experience";
 
-const Experience = () => {
-
-    const sapmpleText:string = `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. `
-    return (
-        <>
-            <ul>
-                <li>
-                    <div>
-                        <h2>Software Engineer Manager</h2>
-                        <p>{sapmpleText}</p>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <h2>Azure Architect</h2>
-                        <p>{sapmpleText}</p>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <h2>Cloud Solution Designer</h2>
-                        <p>{sapmpleText}</p>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <h2>Software Engineer Manager</h2>
-                        <p>{sapmpleText}</p>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <h2>Azure Architect</h2>
-                        <p>{sapmpleText}</p>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <h2>Cloud Solution Designer</h2>
-                        <p>{sapmpleText}</p>
-                    </div>
-                </li>
-            </ul>
-        </>
-    );
+const Experience: React.FC<WorkExperienceProps> = ({ workexperiences }) => {
+  return (
+    <>
+      <h1 className="text-2xl pb-2">Experience</h1>
+      <ul>
+        {workexperiences.map((experience, index) => {
+          return (
+            <li className="flex flex-col pb-2 border-b-4" key={index}>
+              <div> <p className="font-bold">{experience.title} </p> </div>
+              <div className="flex flex-row whitespace-pre">
+                <p className="font-bold">from: </p> {experience.from}
+                <p className="font-bold">to: </p> {experience.to}
+              </div>
+              <div className="flex flex-row whitespace-pre">
+                <p className="font-bold">summary: </p> <p className="whitespace-pre-wrap">{experience.summary}</p>
+              </div>
+              <div className="flex flex-row whitespace-pre">
+              <p className="font-bold">highlights: </p>
+                <ul>
+                  {experience.highlights.map((highlight, index) => {
+                    return <li key={index}>{highlight}</li>;
+                  })}
+                </ul>
+              </div>
+            </li>
+          );
+        })}
+      </ul>
+    </>
+  );
 };
 
 export default Experience;

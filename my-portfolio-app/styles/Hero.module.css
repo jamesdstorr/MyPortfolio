@@ -4,7 +4,6 @@
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 2fr 12fr 1fr;
   top: 0px;
-
   position: fixed;
 }
 
