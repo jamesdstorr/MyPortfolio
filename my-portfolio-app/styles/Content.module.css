@@ -1,0 +1,14 @@
+.content {
+    position: relative;
+    overflow-y: auto;
+    padding-right:10px;
+    height:80vh;
+  }
+
+  .content::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollIndicator {
+    margin-top: 25%;
+  }

@@ -1,14 +1,13 @@
-import React from "react";
 import profilePic from "../../public/images/profile2.png";
 import Image from "next/image";
 import style from "../../styles/Hero.module.css";
 import Content from "./Content";
 
 const Hero = () => {
-  const intro: string = `Hello, I'm James Storr`;
-
-  return (
   
+  const intro: string = `Hello, I'm James Storr`;
+  
+  return (
       <div className={style.hero} id="hero">
         <div className={style.profile}>
          

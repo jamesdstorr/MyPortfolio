@@ -20,7 +20,6 @@ const DisplayProvider: React.FC<DisplayProviderProps> = ({ children }) => {
 
   const updateDisplay = (e: string) => {
     setDisplay(e);
-    console.log(display);
   }
 
   const contextValue = useMemo(() => {

@@ -14,23 +14,22 @@ const Nav = () => {
   const { setDisplay } = displayContext;
 
   const handleNavClick = (e: string) => {
-    console.log("Clicked:", e);
     setDisplay(e);
   };
 
   return (
     <div className={style.sidebar}>
       <ul className={style.nav}>
-        <li>
-          <button onClick={() => handleNavClick("aboutMe")}>About Me</button>
+        <li className={style.navLink}>
+          <button  onClick={() => handleNavClick("aboutMe")}>About me</button>
         </li>
-        <li>
+        <li className={style.navLink}>
           <button onClick={() => handleNavClick("experience")}>Experience</button>
         </li>
-        <li>
+        <li className={style.navLink}>
           <button onClick={() => handleNavClick("experience")}>Projects</button>
         </li>
-        <li>
+        <li className={style.navLink}>
           <button onClick={() => handleNavClick("experience")}>Blog</button>
         </li>
       </ul>
