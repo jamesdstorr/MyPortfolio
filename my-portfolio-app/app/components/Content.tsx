@@ -6,6 +6,11 @@ import Experience from "./Experience";
 import style from "../../styles/Content.module.css";
 import VerticalScrollIndicator from "./VerticalScrollIndicator";
 
+import BlogList from "./BlogList";
+
+import { ApolloProvider } from "@apollo/client";
+import client from "../data/graphql/apolloClient";
+
 const Content = () => {
   const context = useContext(DisplayContext);
   if (!context) {
@@ -14,18 +19,25 @@ const Content = () => {
   const { display, workExperiences } = context;
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
+
+  
   return (
+    <ApolloProvider client={client}>
     <div className="flex flex-row">
       <div className={style.content} ref={scrollContainerRef}>
         {display === "aboutMe" && <AboutMe />}
         {display === "experience" && (
           <Experience workexperiences={workExperiences} />
         )}
+        {display === "blog" && (
+          <BlogList/>
+        )}
       </div>
       <div className={style.scrollIndicator}>
         <VerticalScrollIndicator targetRef={scrollContainerRef} />
       </div>
     </div>
+    </ApolloProvider>
   );
 };
 

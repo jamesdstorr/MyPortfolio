@@ -1,0 +1,20 @@
+
+.blogListItem{
+    padding-bottom: 10px;
+    display: flex;
+    flex: row;
+    width: 100%;
+   
+}
+
+.blogListImage{
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.blogListDetail {
+    border-radius: 5px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+

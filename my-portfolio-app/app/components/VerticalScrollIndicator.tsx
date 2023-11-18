@@ -50,10 +50,12 @@ const VerticalScrollIndicator: React.FC<VerticalScrollIndicatorProps> = ({
     height: "90%",
     width: "5px",
     backgroundColor: "lightgrey",
+    
   };
 
   return (
     <>
+    
       <div style={indicatorStyle} />
       <div style={scrollbarBackgroundStyle} />
     </>

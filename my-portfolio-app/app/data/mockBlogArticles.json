@@ -1,0 +1,42 @@
+{
+    "data": {
+      "articles": [
+        {
+          "id": "1",
+          "summary": "this is an example of a blog post",
+          "title": "Article 1",
+          "mainImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcWTCaeEb9MI3LJqmIg1tAy2pnsNh6qhlWvdy2oUkw1w&s"
+        },
+        {
+          "id": "2",
+          "summary": "this is a second example",
+          "title": "Article 2",
+          "mainImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcWTCaeEb9MI3LJqmIg1tAy2pnsNh6qhlWvdy2oUkw1w&s"
+        },
+        {
+          "id": "3",
+          "summary": "this is an example of a blog post",
+          "title": "Article 3",
+          "mainImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcWTCaeEb9MI3LJqmIg1tAy2pnsNh6qhlWvdy2oUkw1w&s"
+        },
+        {
+          "id": "4",
+          "summary": "this is a second example",
+          "title": "Article 4",
+          "mainImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcWTCaeEb9MI3LJqmIg1tAy2pnsNh6qhlWvdy2oUkw1w&s"
+        },
+        {
+          "id": "5",
+          "summary": "this is an example of a blog post",
+          "title": "Article 5",
+          "mainImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcWTCaeEb9MI3LJqmIg1tAy2pnsNh6qhlWvdy2oUkw1w&s"
+        },
+        {
+          "id": "6",
+          "summary": "this is a second example",
+          "title": "Article 6",
+          "mainImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcWTCaeEb9MI3LJqmIg1tAy2pnsNh6qhlWvdy2oUkw1w&s"
+        }
+      ]
+    }
+  }

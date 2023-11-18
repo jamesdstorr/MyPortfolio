@@ -3,6 +3,7 @@
     overflow-y: auto;
     padding-right:10px;
     height:80vh;
+    width:100%
   }
 
   .content::-webkit-scrollbar {
