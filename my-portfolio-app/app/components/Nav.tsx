@@ -22,16 +22,19 @@ const Nav = () => {
     <div className={style.sidebar}>
       <ul className={style.nav}>
         <li className={style.navLink}>
-          <button  onClick={() => handleNavClick("aboutMe")}>About me</button>
+          <button  onClick={() => handleNavClick("About Me")}>About me</button>
         </li>
         <li className={style.navLink}>
-          <button onClick={() => handleNavClick("experience")}>Experience</button>
+          <button onClick={() => handleNavClick("Experience")}>Experience</button>
         </li>
         <li className={style.navLink}>
-          <button onClick={() => handleNavClick("experience")}>Projects</button>
+          <button onClick={() => handleNavClick("Testimonials")}>Testimonials</button>
         </li>
         <li className={style.navLink}>
-          <button onClick={() => handleNavClick("blog")}>Blog</button>
+          <button onClick={() => handleNavClick("Projects")}>Projects</button>
+        </li>
+        <li className={style.navLink}>
+          <button onClick={() => handleNavClick("Blog")}>Blog</button>
         </li>
       </ul>
       

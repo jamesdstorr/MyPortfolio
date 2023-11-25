@@ -7,6 +7,7 @@ export const GET_ARTICLES = gql`
       summary
       title
       mainImage
+      content
     }
   }
 `;

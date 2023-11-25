@@ -1,5 +1,5 @@
 import React from "react";
-import { BlogListArticles, BlogListProps } from "../types/blogArticle";
+import { BlogListArticles } from "../types/blogArticle";
 import style from "../../styles/Blog.module.css";
 import { useQuery } from "@apollo/client";
 import { GET_ARTICLES } from "../data/graphql/queries/queryGetArticles";
@@ -11,7 +11,6 @@ const BlogNav = () => {
   console.log(data?.articles);
   return (
     <div>
-      <h1 className="text-2xl pb-2">Blog</h1>
       <ul>
         {data?.articles.map((article, index) => {
           return (

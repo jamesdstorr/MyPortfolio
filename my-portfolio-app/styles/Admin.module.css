@@ -1,0 +1,17 @@
+.admin{
+    max-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 2fr 80vh 1fr;
+
+}
+
+.pageTitle{
+    grid-row: 1;
+    grid-column: span 6/12;
+}
+
+.adminEditor {
+    grid-column: 6/12;
+    grid-row: 2;
+}

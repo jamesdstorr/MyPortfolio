@@ -1,15 +1,15 @@
 
    [ {
         "title": "Software Engineering Manager, BT",
-        "from": "October 2023",
+        "from": "October 2022",
         "to": "Present",
-        "summary": "Leading a team of software engineers compromising of three squads delivering React, Java API and Flutter to deliver a Basket and Checkout platform for EE's new Marketplace platform.",
+        "summary": "Leading a team of software engineers compromising of over thirty staff split across three squads. My teams develop React, Java API and Flutter applications to deliver a Basket and Checkout solution for EE's new Marketplace platform.",
         "highlights": [
             "Leading a team of over 30 Software Engineers from across the globe",
             "Working with React, Flutter and Java Spring Boot",
             "Developing Roadmaps and coordintating with Product Owners",
-            "Building Frameworks for delivering high quality",
-            "Using Agile Methedologies and DORA metrics",
+            "Building Frameworks for delivering high quality code",
+            "Using Agile Methedologies and DORA metrics to improve efficient and maintainable software development",
             "Conducting Code Reviews and Quality Assurance",
             "Improving Code Coverage, and Test-Driven Development",
             "Nurturing a Performance-based Engineering Culture"
@@ -19,8 +19,8 @@
     },
     {
         "title": "Azure Cloud Consultant, BT",
-        "from": "October 2022",
-        "to": "October 2023",
+        "from": "October 2021",
+        "to": "October 2022",
         "summary": "Developing Azure Cloud IT Solutions for various BT customers, with a particular focus on Power Platform and Microsoft Teams.",
         "highlights": [
             "Designing and Devloping Microsoft Teams Solutions and Policies",
@@ -32,16 +32,58 @@
 
     },
     {
-        "title": "Azure Cloud Consultant",
-        "from": "October 2022",
-        "to": "October 2023",
-        "summary": "Developing Azure Cloud IT Solutions for various BT customers, with a particular focus on Power Platform and Microsoft Teams.",
+        "title": "Microsoft 365 Service Designer, BT",
+        "from": "October 2020",
+        "to": "October 2021",
+        "summary": "Developing M365 Solutions for BT Modern Workplace team. These solutions were deisnged and built to support BT's knolwedge workers, with over 80,000 staff supported. ",
         "highlights": [
-            "Designing and Devloping Microsoft Teams Solutions and Policies",
-            "Designing modern workplace experiences",
-            "Mentoring Graduates and Apprentices in Microsoft technologies",
-            "Building Power Platform Solutions",
-            "Business Case curation and Project management"
+            "Designing BT's Microsoft Teams solution",
+            "Automating the migrtion of BT's workforce from Skype to Teams",
+            "Deploying a eCDN solution to improve BT's network internal bandwidth utilisation during the Pandemic",
+            "Coaching colleagues on Coding and Database technologies",
+            "Director-level stakeholder engagement",
+            "Developing service monitoring solutions using Azure services"
+        ]
+
+    }, 
+    {
+        "title": "Engineering Team Lead, BT",
+        "from": "May 2018",
+        "to": "October 2020",
+        "summary": "Leading an engineering team responsible for the Microsoft System Center Configuration Manager platform. ",
+        "highlights": [
+            "Leading a large team of engineers responsible for Webtop Infrastructure, Software Deployment and Desktop Security",
+            "Developing a culture of knowledge sharing and support",
+            "Managing engineer's performance and personal development",
+            "Driving the adoption of Windows 10 across BT",
+            "Developing an .Net MVC application to support the upgrade paths for BT desktops"
+        ]
+
+    },
+    {
+        "title": "Senior Software Infrastructure Engineer, BT",
+        "from": "November 2016",
+        "to": "May 2018",
+        "summary": "Supporting BT's SCCM platform, including the underlying database and data warehouse infrastructure.",
+        "highlights": [
+            "Developing the infrastructure supporting BT's desktops",
+            "Managing Desktop Security and Updates",
+            "Infrastructure Automations", 
+            "Supporting SQL Server databases and infrastructure", 
+            "Developing SQL Data Warehouse and reporting"
+        ]
+
+    },
+    {
+        "title": "SQL Server Engineer, BT",
+        "from": "April 2014",
+        "to": "November 2016",
+        "summary": "Developing and supporting a host of SQL Servers for BT's Customers",
+        "highlights": [
+            "Developing and deploying new SQL Server Solutions",
+            "Automation of SQL Maintenance",
+            "Improving Database Performance and Resilience"
+           
         ]
 
     }

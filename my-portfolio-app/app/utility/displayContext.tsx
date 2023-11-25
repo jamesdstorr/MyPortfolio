@@ -16,7 +16,7 @@ interface DisplayProviderProps {
 }
 
 const DisplayProvider: React.FC<DisplayProviderProps> = ({ children }) => {
-  const [display, setDisplay] = useState<string>("aboutMe");
+  const [display, setDisplay] = useState<string>("About Me");
 
   const updateDisplay = (e: string) => {
     setDisplay(e);

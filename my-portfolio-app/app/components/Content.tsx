@@ -25,11 +25,11 @@ const Content = () => {
     <ApolloProvider client={client}>
     <div className="flex flex-row">
       <div className={style.content} ref={scrollContainerRef}>
-        {display === "aboutMe" && <AboutMe />}
-        {display === "experience" && (
+        {display === "About Me" && <AboutMe />}
+        {display === "Experience" && (
           <Experience workexperiences={workExperiences} />
         )}
-        {display === "blog" && (
+        {display === "Blog" && (
           <BlogList/>
         )}
       </div>

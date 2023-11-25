@@ -19,7 +19,6 @@ With each role and challenge I faced, I gained value experiences and found succe
     `
     return (
         <>
-        <h2 className='text-2xl pb-2'>About me</h2>
         <p className='whitespace-pre-wrap'>{aboutMe}</p>
         </>
     );

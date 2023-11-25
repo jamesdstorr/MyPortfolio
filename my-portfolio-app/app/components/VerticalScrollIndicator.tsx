@@ -9,6 +9,12 @@ const VerticalScrollIndicator: React.FC<VerticalScrollIndicatorProps> = ({
 }) => {
   const [scrollPosition, setScrollPosition] = useState<number>(10);
 
+  const onLoad = () => {
+    console.log(targetRef.current);
+    console.log("content changed");
+    setScrollPosition(10);
+  };
+
   const onScroll = () => {
     const element = targetRef.current;
     if (element) {
@@ -23,11 +29,26 @@ const VerticalScrollIndicator: React.FC<VerticalScrollIndicatorProps> = ({
 
   useEffect(() => {
     const target = targetRef.current;
+
+    const mutationCallback = (
+      mutationsList: any,
+      observer: MutationObserver
+    ) => {
+      for (const mutation of mutationsList) {
+        onLoad();
+      }
+    };
+
+    // Creating an observer
+    const observer = new MutationObserver(mutationCallback);
+
     if (target) {
+      observer.observe(target, { childList: true, subtree: true });
       target.addEventListener("scroll", onScroll);
 
       return () => {
         target.removeEventListener("scroll", onScroll);
+        observer.disconnect();
       };
     }
   }, [targetRef]);
@@ -41,21 +62,21 @@ const VerticalScrollIndicator: React.FC<VerticalScrollIndicatorProps> = ({
     width: "5px",
     backgroundColor: "black",
     zIndex: "10",
+    borderRadius: "5px",
   };
 
   const scrollbarBackgroundStyle: React.CSSProperties = {
     position: "absolute",
-    top: "10%",
+    top: "8%",
     right: "0px",
-    height: "90%",
+    height: "94%",
     width: "5px",
     backgroundColor: "lightgrey",
-    
+    borderRadius: "5px",
   };
 
   return (
     <>
-    
       <div style={indicatorStyle} />
       <div style={scrollbarBackgroundStyle} />
     </>
