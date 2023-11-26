@@ -5,9 +5,21 @@ export type BlogArticle = {
   title: string;
   summary: string;
   mainImage?: string;
+  content: string;
 };
 
 export type BlogListArticles = {
   articles: BlogArticle[];
 };
+
+
+export type AddArticleResponse = {
+  addArticle: {
+    id: string;
+    mainImage: string;
+    summary: string;
+    title: string;
+    content: string;
+  };
+}
 

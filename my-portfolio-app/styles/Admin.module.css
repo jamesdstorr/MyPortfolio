@@ -2,7 +2,7 @@
     max-height: 100vh;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 2fr 80vh 1fr;
+    grid-template-rows: repeat(12, 1fr);
 
 }
 
@@ -10,8 +10,34 @@
     grid-row: 1;
     grid-column: span 6/12;
 }
+.articleProps{
+    grid-column: 6/12;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.articleProps form {
+    display: flex;
+    flex-direction: column;
+}
 
 .adminEditor {
     grid-column: 6/12;
-    grid-row: 2;
+    grid-row: 3;
+    padding: 10px;
 }
+
+.blog {
+    margin-top: 10px;
+}
+
+.blog::after{
+    content:'';
+    height: 2px; 
+    margin-top: 20px;
+    background: linear-gradient(to left, transparent, black, transparent);
+}
+
+
+  

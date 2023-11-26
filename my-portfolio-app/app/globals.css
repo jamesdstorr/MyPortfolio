@@ -25,5 +25,43 @@ body {
   
 }
 
+.blog h1 {
+  @apply text-4xl;
+  @apply font-bold;
+}
+.blog h2 {
+  @apply text-3xl;
+  @apply font-bold;
+}
+.blog h3 {
+  @apply text-2xl;
+  @apply font-bold;
+}
+.blog h4 {
+  @apply text-xl;
+  @apply font-semibold;
+}
+.blog h5 {
+  @apply text-lg;
+  @apply font-semibold;
+}
+.blog h6 {
+  @apply text-sm;
+  @apply font-semibold;
+}
+
+.blog ul {
+  @apply list-disc;
+  @apply font-semibold;
+  @apply pl-5
+}
+
+
+.blog ol {
+  @apply list-decimal;
+  @apply font-semibold;
+  @apply pl-5
+}
+
 
 

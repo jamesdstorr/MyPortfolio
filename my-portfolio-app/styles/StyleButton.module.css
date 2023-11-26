@@ -1,0 +1,10 @@
+.blockButton {
+    border: black 1px solid;
+    padding: 5px; 
+    margin: 5px;
+}
+
+.activeButton {
+    color: white;
+    background-color: black;
+}
