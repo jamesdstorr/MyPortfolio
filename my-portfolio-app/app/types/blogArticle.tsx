@@ -4,22 +4,33 @@ export type BlogArticle = {
   id: string;
   title: string;
   summary: string;
-  mainImage?: string;
+  imageUrl?: string;
   content: string;
 };
 
 export type BlogListArticles = {
-  articles: BlogArticle[];
+  getAllArticles: BlogArticle[];
 };
 
 
 export type AddArticleResponse = {
-  addArticle: {
+  createArticle: {
     id: string;
-    mainImage: string;
+    imageUrl: string;
     summary: string;
     title: string;
     content: string;
   };
 }
+
+export type GetArticleResponse = {
+  getArticleById: {
+    id: string;
+    imageUrl: string;
+    summary: string;
+    title: string;
+    content: string;
+  };
+}
+
 

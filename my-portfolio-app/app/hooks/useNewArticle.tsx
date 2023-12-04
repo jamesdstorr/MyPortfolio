@@ -12,10 +12,10 @@ const useNewArticle = () => {
                   title: newArticle.title,
                   summary: newArticle.summary,
                   content: newArticle.content,
-                  mainImage: newArticle.mainImage
+                  imageUrl: newArticle.imageUrl
                 }
               });
-              console.log(response.data?.addArticle);
+              console.log(response.data?.createArticle);
         }
         catch (err){
             console.log(err);

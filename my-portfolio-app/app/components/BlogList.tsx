@@ -8,16 +8,16 @@ const BlogNav = () => {
   const { loading, error, data } = useQuery<BlogListArticles>(GET_ARTICLES);
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :</p>;
-  console.log(data?.articles);
+  console.log(data);
   return (
     <div>
       <ul>
-        {data?.articles.map((article, index) => {
+        {data?.getAllArticles.map((article, index) => {
           return (
             <li key={article.id}>
               <div className={style.blogListItem}>
                 <img
-                  src={article.mainImage}
+                  src={article.imageUrl}
                   alt={article.title}
                   className={style.blogListImage}
                 />

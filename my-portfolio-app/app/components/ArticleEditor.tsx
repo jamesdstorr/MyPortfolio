@@ -31,7 +31,7 @@ const ArticleEditor = () => {
   const [articleProps, setArticlePropers] = useState({
     title: "",
     summary: "",
-    mainImage: "",
+    imageUrl: "",
   });
   const { loading, error, data, addNewArticle } = useNewArticle();
 
@@ -41,7 +41,7 @@ const ArticleEditor = () => {
       title: articleProps.title,
       id: "",
       summary: articleProps.summary,
-      mainImage: articleProps.mainImage,
+      imageUrl: articleProps.imageUrl,
       content: stateToHTML(editorState.getCurrentContent()),
     });
   };
@@ -85,7 +85,7 @@ const ArticleEditor = () => {
   return (
     <div className={style.admin}>
       <div className={style.pageTitle}>
-        <h1>New Article</h1>
+        <h2>New Article</h2>
       </div>
       <div className={style.articleProps}>
         <input
@@ -107,16 +107,16 @@ const ArticleEditor = () => {
         />
         <input
           type="text"
-          value={articleProps.mainImage}
+          value={articleProps.imageUrl}
           onChange={(e) =>
-            setArticlePropers({ ...articleProps, mainImage: e.target.value })
+            setArticlePropers({ ...articleProps, imageUrl: e.target.value })
           }
           placeholder="Main Image Url"
           className="border-2 mb-5"
         />
         <div className={style.blog}>
           <div>
-            <h2>Styling</h2>
+            <h3>Styling</h3>
           </div>
           <div>
             <InlineStyles
@@ -137,7 +137,7 @@ const ArticleEditor = () => {
           <div>
             <h2>Content</h2>
           </div>
-          <div style={{ border: "1px solid black", padding: "15px" }}>
+          <div className="border-2">
             <Editor
               editorState={editorState}
               onChange={handleChange}
@@ -149,20 +149,11 @@ const ArticleEditor = () => {
         <button
           type="submit"
           disabled={loading}
-          className="border-2 p-2 w-1/4 self-center"
+          className="border-2 p-2 w-1/4 self-center mt-5"
           onClick={submitNewArticle}
         >
           Add Article
         </button>
-
-        <div className={style.blog}>
-          <h2>Preview</h2>
-          <div dangerouslySetInnerHTML={createMarkup()} />
-        </div>
-        <div>
-          <h2>Raw HTML</h2>
-          <pre className="border-2">{rawHtml}</pre>
-        </div>
       </div>
     </div>
   );

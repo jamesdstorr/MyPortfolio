@@ -1,12 +1,12 @@
 import { gql } from "@apollo/client";
 
 export const ADD_ARTICLE = gql`
-  mutation AddArticle($title: String!, $summary: String!, $content: String!, $mainImage: String!) {
-    addArticle(title: $title, summary: $summary, content: $content, mainImage: $mainImage) {
-      id
+  mutation CreateArticle($title: String!, $summary: String!, $content: String!, $imageUrl: String!) {
+    createArticle(input: {title: $title, summary: $summary, content: $content, imageUrl: $imageUrl}) {
+      
       summary
       title
-      mainImage
+      imageUrl
       content
     }
   }
